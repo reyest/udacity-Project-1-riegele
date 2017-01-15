@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Riegele</string>
+    <string name="header">Riegele Wirtshaus</string>
+    <string name="description">"Im Herzen Augsburgs befindet sich unser Riegele Wirtshaus. Unser einzigartiges Ambiente bietet die Gelegenheit, sich mit bayerischen Spezialitäten verwöhnen zu lassen und  für ein paar Stunden den hektischen Alltag zu vergessen! - bei uns sind Sie immer goldrichtig und herzlich Willkommen!"</string>
+    <string name="contact">"Contact us</string>
+    <string name="address">Frölichstraße 26, 86150 Augsburg</string>
+    <string name="open">"Montag bis Freitag 10:00 &#8211; 01:00 Uhr"</string>
+    <string name="phone">"0821 / 4552550</string>
+    <string name="web">"www.riegele-wirtshaus.de</string>
+    <string name="More">"More&#8230;"</string>
+</resources>
