@@ -1,132 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.riegele.MainActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context="com.example.android.riegele.MainActivity">
+        android:layout_height="wrap_content">
 
-        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
+        <ImageView
+            android:id="@+id/picture1"
+            style="@style/image"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/biergarten2" />
+
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/picture1"
+            android:layout_alignLeft="@id/picture1"
+            android:background="#60000000"
+            android:fontFamily="sans-serif"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:text="@string/header"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp" />
 
-            <ImageView
-                style="@style/image"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/biergarten2"
-                android:id="@+id/picture1" />
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/picture1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/description"
+            android:textColor="#000000"
+            android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/header"
-                android:textColor="#FFFFFF"
-                android:layout_alignLeft="@id/picture1"
-                android:layout_alignBottom="@id/picture1"
-                android:gravity="bottom"
-                android:textSize="34sp"
-                android:fontFamily="sans-serif"
-                android:paddingLeft="16dp"
-                android:paddingBottom="8dp"
-                android:paddingTop="8dp"
-                android:background="#60000000"/>
+        <TextView
+            android:id="@+id/kontakt"
+            style="@style/subheader"
+            android:layout_below="@id/description"
+            android:text="@string/contact" />
 
-            <TextView
-                android:id="@+id/description"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_below="@id/picture1"
-                android:text="@string/description"
-                android:textColor="#000000"
-                android:textSize="16sp" />
+        <ImageView
+            android:id="@+id/icon_address"
+            style="@style/icon"
+            android:layout_below="@id/kontakt"
+            android:src="@drawable/ic_location_on_black_36dp" />
 
-            <TextView
-                style="@style/subheader"
-                android:id="@+id/kontakt"
-                android:text="@string/contact"
-                android:layout_below="@id/description" />
+        <TextView
+            android:id="@+id/address"
+            style="@style/information"
+            android:layout_alignTop="@+id/icon_address"
+            android:layout_toEndOf="@+id/icon_address"
+            android:layout_toRightOf="@+id/icon_address"
+            android:autoLink="map"
+            android:text="@string/address" />
 
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/icon_address"
-                android:src="@drawable/ic_location_on_black_36dp"
-                android:layout_below="@id/kontakt" />
+        <ImageView
+            android:id="@+id/icon_open"
+            style="@style/icon"
+            android:layout_below="@id/icon_address"
+            android:src="@drawable/ic_access_time_black_36dp" />
 
-            <TextView
-                style="@style/information"
-                android:id="@+id/address"
-                android:text="@string/address"
-                android:layout_alignTop="@+id/icon_address"
-                android:layout_toRightOf="@+id/icon_address"
-                android:layout_toEndOf="@+id/icon_address"
-                android:autoLink="map" />
+        <TextView
+            android:id="@+id/open"
+            style="@style/information"
+            android:layout_alignTop="@+id/icon_open"
+            android:layout_toEndOf="@+id/icon_open"
+            android:layout_toRightOf="@+id/icon_open"
+            android:text="@string/open" />
 
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/icon_open"
-                android:src="@drawable/ic_access_time_black_36dp"
-                android:layout_below="@id/icon_address" />
+        <ImageView
+            android:id="@+id/icon_phone"
+            style="@style/icon"
+            android:layout_below="@id/icon_open"
+            android:src="@drawable/ic_phone_black_36dp" />
 
-            <TextView
-                style="@style/information"
-                android:id="@+id/open"
-                android:text="@string/open"
-                android:layout_alignTop="@+id/icon_open"
-                android:layout_toRightOf="@+id/icon_open"
-                android:layout_toEndOf="@+id/icon_open" />
+        <TextView
+            android:id="@+id/phone"
+            style="@style/information"
+            android:layout_alignTop="@+id/icon_phone"
+            android:layout_toEndOf="@+id/icon_phone"
+            android:layout_toRightOf="@+id/icon_phone"
+            android:autoLink="phone"
+            android:text="@string/phone" />
 
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/icon_phone"
-                android:src="@drawable/ic_phone_black_36dp"
-                android:layout_below="@id/icon_open" />
+        <ImageView
+            android:id="@+id/icon_web"
+            style="@style/icon"
+            android:layout_below="@id/icon_phone"
+            android:src="@drawable/ic_language_black_36dp" />
 
-            <TextView
-                style="@style/information"
-                android:id="@+id/phone"
-                android:text="@string/phone"
-                android:layout_alignTop="@+id/icon_phone"
-                android:layout_toRightOf="@+id/icon_phone"
-                android:layout_toEndOf="@+id/icon_phone"
-                android:autoLink="phone" />
+        <TextView
+            android:id="@+id/web"
+            style="@style/information"
+            android:layout_alignTop="@+id/icon_web"
+            android:layout_toEndOf="@+id/icon_web"
+            android:layout_toRightOf="@+id/icon_web"
+            android:autoLink="web"
+            android:text="@string/web" />
 
-            <ImageView
-                style="@style/icon"
-                android:id="@+id/icon_web"
-                android:src="@drawable/ic_language_black_36dp"
-                android:layout_below="@id/icon_phone" />
+        <TextView
+            android:id="@+id/more"
+            style="@style/subheader"
+            android:layout_below="@id/icon_web"
+            android:gravity="center_vertical"
+            android:text="@string/More" />
 
-            <TextView
-                style="@style/information"
-                android:id="@+id/web"
-                android:text="@string/web"
-                android:layout_alignTop="@+id/icon_web"
-                android:layout_toRightOf="@+id/icon_web"
-                android:layout_toEndOf="@+id/icon_web"
-                android:autoLink="web"/>
+        <ImageView
+            android:id="@+id/picture2"
+            style="@style/image"
+            android:layout_below="@id/more"
+            android:src="@drawable/wirtshaus2" />
 
-            <TextView
-                style="@style/subheader"
-                android:id="@+id/more"
-                android:text="@string/More"
-                android:gravity="center_vertical"
-                android:layout_below="@id/icon_web" />
+        <ImageView
+            android:id="@+id/picture3"
+            style="@style/image"
+            android:layout_below="@id/picture2"
+            android:src="@drawable/brotzeit" />
 
-            <ImageView
-                style="@style/image"
-                android:src="@drawable/wirtshaus2"
-                android:id="@+id/picture2"
-                android:layout_below="@id/more" />
-
-            <ImageView
-                style="@style/image"
-                android:src="@drawable/brotzeit"
-                android:id="@+id/picture3"
-                android:layout_below="@id/picture2" />
-
-        </RelativeLayout>
+    </RelativeLayout>
 </ScrollView>
