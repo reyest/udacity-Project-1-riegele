@@ -12,15 +12,10 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/image"
+                android:layout_marginTop="0dp"
                 android:src="@drawable/biergarten2"
-                android:id="@+id/picture1"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-            />
+                android:id="@+id/picture1" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -47,168 +42,91 @@
                 android:layout_below="@id/picture1"
                 android:text="@string/description"
                 android:textColor="#000000"
-                android:textSize="16sp"
-            />
+                android:textSize="16sp" />
 
             <TextView
+                style="@style/subheader"
                 android:id="@+id/kontakt"
                 android:text="@string/contact"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:paddingLeft="16dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp"
-                android:gravity="center_vertical"
-                android:layout_marginTop="16dp"
-                android:layout_below="@id/description"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:background="@color/colorPrimary"
-
-                />
+                android:layout_below="@id/description" />
 
             <ImageView
+                style="@style/icon"
                 android:id="@+id/icon_address"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
                 android:src="@drawable/ic_location_on_black_36dp"
-                android:layout_marginLeft="16dp"
-                android:layout_below="@id/kontakt"
-                android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"/>
-
+                android:layout_below="@id/kontakt" />
 
             <TextView
+                style="@style/information"
                 android:id="@+id/address"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
                 android:text="@string/address"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
                 android:layout_alignTop="@+id/icon_address"
                 android:layout_toRightOf="@+id/icon_address"
                 android:layout_toEndOf="@+id/icon_address"
-                android:layout_marginLeft="20dp"
-                android:autoLink="map"
-            />
+                android:autoLink="map" />
 
             <ImageView
+                style="@style/icon"
                 android:id="@+id/icon_open"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
                 android:src="@drawable/ic_access_time_black_36dp"
-                android:layout_marginLeft="16dp"
-                android:layout_below="@id/icon_address"
-                android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"
-                />
-
+                android:layout_below="@id/icon_address" />
 
             <TextView
+                style="@style/information"
                 android:id="@+id/open"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
                 android:text="@string/open"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
                 android:layout_alignTop="@+id/icon_open"
                 android:layout_toRightOf="@+id/icon_open"
-                android:layout_toEndOf="@+id/icon_open"
-                android:layout_marginLeft="20dp"
-                />
+                android:layout_toEndOf="@+id/icon_open" />
 
             <ImageView
+                style="@style/icon"
                 android:id="@+id/icon_phone"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
                 android:src="@drawable/ic_phone_black_36dp"
-                android:layout_marginLeft="16dp"
-                android:layout_below="@id/icon_open"
-                android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"/>
+                android:layout_below="@id/icon_open" />
 
             <TextView
+                style="@style/information"
                 android:id="@+id/phone"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
                 android:text="@string/phone"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
                 android:layout_alignTop="@+id/icon_phone"
                 android:layout_toRightOf="@+id/icon_phone"
                 android:layout_toEndOf="@+id/icon_phone"
-                android:layout_marginLeft="20dp"
-                android:autoLink="phone"/>
+                android:autoLink="phone" />
 
             <ImageView
+                style="@style/icon"
                 android:id="@+id/icon_web"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
                 android:src="@drawable/ic_language_black_36dp"
-                android:layout_marginLeft="16dp"
-                android:layout_below="@id/icon_phone"
-                android:layout_marginTop="16dp"
-                android:tint="@color/colorPrimary"/>
+                android:layout_below="@id/icon_phone" />
 
             <TextView
+                style="@style/information"
                 android:id="@+id/web"
-                android:layout_width="wrap_content"
-                android:layout_height="36dp"
                 android:text="@string/web"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
                 android:layout_alignTop="@+id/icon_web"
                 android:layout_toRightOf="@+id/icon_web"
                 android:layout_toEndOf="@+id/icon_web"
-                android:layout_marginLeft="20dp"
                 android:autoLink="web"/>
 
             <TextView
+                style="@style/subheader"
                 android:id="@+id/more"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="@string/More"
-                android:textColor="#FFFFFF"
-                android:textSize="24sp"
-                android:fontFamily="sans-serif"
                 android:gravity="center_vertical"
-                android:layout_marginTop="16dp"
-                android:layout_below="@id/icon_web"
-                android:background="@color/colorPrimary"
-                android:paddingLeft="16dp"
-                android:paddingTop="4dp"
-                android:paddingBottom="4dp" />
+                android:layout_below="@id/icon_web" />
 
             <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/wirtshaus2"
-            android:id="@+id/picture2"
-            android:layout_centerHorizontal="true"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:layout_below="@id/more"
-            android:layout_marginTop="16dp"
-            />
+                style="@style/image"
+                android:src="@drawable/wirtshaus2"
+                android:id="@+id/picture2"
+                android:layout_below="@id/more" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/image"
                 android:src="@drawable/brotzeit"
                 android:id="@+id/picture3"
-                android:layout_centerHorizontal="true"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:layout_below="@id/picture2"
-                android:layout_marginTop="8dp"
-                />
+                android:layout_below="@id/picture2" />
+
         </RelativeLayout>
 </ScrollView>
