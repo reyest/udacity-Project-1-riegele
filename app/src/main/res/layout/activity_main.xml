@@ -9,12 +9,12 @@
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/wirtshaus"
+                android:src="@drawable/biergarten2"
                 android:id="@+id/picture1"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
@@ -47,7 +47,7 @@
                 android:layout_below="@id/picture1"
                 android:text="@string/description"
                 android:textColor="#000000"
-                android:textSize="16dp"
+                android:textSize="16sp"
             />
 
             <TextView
@@ -62,7 +62,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_below="@id/description"
                 android:textColor="#FFFFFF"
-                android:textSize="24dp"
+                android:textSize="24sp"
                 android:background="@color/colorPrimary"
 
                 />
@@ -90,7 +90,9 @@
                 android:layout_alignTop="@+id/icon_address"
                 android:layout_toRightOf="@+id/icon_address"
                 android:layout_toEndOf="@+id/icon_address"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:autoLink="map"
+            />
 
             <ImageView
                 android:id="@+id/icon_open"
@@ -116,7 +118,8 @@
                 android:layout_alignTop="@+id/icon_open"
                 android:layout_toRightOf="@+id/icon_open"
                 android:layout_toEndOf="@+id/icon_open"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                />
 
             <ImageView
                 android:id="@+id/icon_phone"
@@ -140,7 +143,8 @@
                 android:layout_alignTop="@+id/icon_phone"
                 android:layout_toRightOf="@+id/icon_phone"
                 android:layout_toEndOf="@+id/icon_phone"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:autoLink="phone"/>
 
             <ImageView
                 android:id="@+id/icon_web"
@@ -164,7 +168,8 @@
                 android:layout_alignTop="@+id/icon_web"
                 android:layout_toRightOf="@+id/icon_web"
                 android:layout_toEndOf="@+id/icon_web"
-                android:layout_marginLeft="20dp"/>
+                android:layout_marginLeft="20dp"
+                android:autoLink="web"/>
 
             <TextView
                 android:id="@+id/more"
@@ -185,7 +190,7 @@
             <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/riegele"
+            android:src="@drawable/wirtshaus2"
             android:id="@+id/picture2"
             android:layout_centerHorizontal="true"
             android:adjustViewBounds="true"
@@ -197,7 +202,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/biergarten"
+                android:src="@drawable/brotzeit"
                 android:id="@+id/picture3"
                 android:layout_centerHorizontal="true"
                 android:adjustViewBounds="true"
